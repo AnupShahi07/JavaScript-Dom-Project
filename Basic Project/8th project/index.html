@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Palindrome Checker</title>
+  <style>
+    /* Basic Reset & Background */
+    body {
+      background-color: #1a1a2e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    /* Main Container */
+    .main {
+      background: #16213e;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      text-align: center;
+      width: 90%;
+      max-width: 400px; /* Limits width on desktop */
+    }
+
+    /* Input Styling */
+    input {
+      padding: 12px;
+      width: 80%;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 15px;
+      outline: none;
+    }
+
+    /* Button Styling */
+    button {
+      padding: 12px 25px;
+      background-color: #e94560;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff2e63;
+    }
+
+    /* Result Text */
+    #result {
+      margin-top: 20px;
+      color: white;
+      font-size: 1.2rem;
+      min-height: 1.5em; /* Prevents layout jump */
+    }
+
+    /* Mobile Specific Adjustment */
+    @media (max-width: 480px) {
+      .main {
+        padding: 1.5rem;
+      }
+      input {
+        width: 100%; /* Full width on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <h1 style="color: antiquewhite; font-family: cursive;">
+      Palindrome Check
+    </h1>
+    <input type="text" id="text-input" placeholder="Enter text here" />
+    <br /> <button id="check-btn">Check</button>
+    <p id="result"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
