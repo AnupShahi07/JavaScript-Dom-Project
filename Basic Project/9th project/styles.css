@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+}
+
+/* Main container */
+#drum-machine {
+  background: #ffffff;
+  padding: 20px;
+  width: 320px;
+  max-width: 90%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Pad grid */
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* Drum pads */
+.drum-pad {
+  background: #e0e0e0;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s ease;
+}
+
+.drum-pad:hover {
+  background: #d0d0d0;
+}
+
+.drum-pad:active {
+  background: #bdbdbd;
+}
+
+/* Display */
+#display {
+  margin-top: 15px;
+  padding: 10px;
+  background: #222;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 480px) {
+  #drum-machine {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .drum-pad {
+    padding: 18px 0;
+    font-size: 16px;
+  }
+}
